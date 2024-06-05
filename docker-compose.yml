@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+   web:
+       build: .
+       tty: true
+       command: python3 ./main.py
+       ports:
+           - 8001:8001
