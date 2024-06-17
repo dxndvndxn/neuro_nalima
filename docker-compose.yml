@@ -3,6 +3,6 @@ services:
    web:
        build: .
        tty: true
-       command: python3 ./main.py
+       command: python3 ./manage.py
        ports:
            - 8001:8001

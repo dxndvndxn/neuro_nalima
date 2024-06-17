@@ -1,10 +1,9 @@
 from flask import Flask
-from recognise_text import bp as recognise_text_bp
+from ner import bp as ner_bp
 
 
 def create_app():
     app = Flask(__name__)
-
-    app.register_blueprint(recognise_text_bp)
+    app.register_blueprint(ner_bp)
 
     return app
